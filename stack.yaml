@@ -1,7 +1,7 @@
 resolver: lts-9.3
 
 packages:
-  - .
-  - test/integration/custom-package-conf/foo
-  - example
-  - ghci-wrapper
+  - repl-check
+  - repl-check/example
+  - repl-check/ghci-wrapper
+  - repl-check/test/integration/custom-package-conf/foo

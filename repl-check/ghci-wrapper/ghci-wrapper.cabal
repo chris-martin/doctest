@@ -1,6 +1,6 @@
--- This file has been generated from package.yaml by Cabalize.
+-- This file has been generated from package.yaml by hpack version 0.18.1.
 --
--- see: https://github.com/sol/cabalize
+-- see: https://github.com/sol/hpack
 
 name:           ghci-wrapper
 version:        0.0.0
@@ -8,9 +8,12 @@ build-type:     Simple
 cabal-version:  >= 1.10
 
 library
-  hs-source-dirs: src
+  hs-source-dirs:
+      src
   exposed-modules:
       Language.Haskell.GhciWrapper
+  other-modules:
+      Paths_ghci_wrapper
   build-depends:
       base == 4.*
     , process
@@ -18,14 +21,14 @@ library
 
 test-suite spec
   type: exitcode-stdio-1.0
-  hs-source-dirs: test
+  hs-source-dirs:
+      test
   main-is: Spec.hs
   other-modules:
       Language.Haskell.GhciWrapperSpec
   build-depends:
       base == 4.*
     , process
-
     , ghci-wrapper
     , hspec == 2.*
     , silently

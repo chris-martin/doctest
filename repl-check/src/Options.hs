@@ -20,7 +20,7 @@ import           Prelude.Compat
 import           Data.List.Compat
 import           Data.Maybe
 
-import qualified Paths_doctest
+import qualified Paths_repl_check
 import           Data.Version (showVersion)
 import           Config as GHC
 import           Interpreter (ghc)
@@ -42,7 +42,7 @@ usage = unlines [
   ]
 
 version :: String
-version = showVersion Paths_doctest.version
+version = showVersion Paths_repl_check.version
 
 ghcVersion :: String
 ghcVersion = GHC.cProjectVersion
