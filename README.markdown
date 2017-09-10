@@ -4,7 +4,7 @@
 
 `repl-check` is a small program that checks examples in a simulated GHCi session.
 
-`repl-check` is a fork of `doctest` which, rather than looking for tests in Haskell comments, reads them from a separate file.
+`repl-check` is a fork of `doctest`. The main difference is that, whereas `doctest` looks for tests in Haskell comments, `repl-check` reads them from a separate file.
 
 ## Usage
 
